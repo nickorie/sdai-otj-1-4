@@ -10,11 +10,12 @@
             margin: 0;
             padding: 0;
             background-color: #ffffff;
+            scroll-behavior: smooth;
         }
 
         /* Navbar styling */
         .navbar {
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.6);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
             backdrop-filter: blur(60px);
             display: flex;
@@ -79,6 +80,16 @@
             text-align: center;
         }
 
+        h3 {
+            max-width: 65%;
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: left;
+            margin: 0 10%;
+            width: 80%;
+        }
+
         p {
             font-size: 20px;
             line-height: 1.2;
@@ -88,7 +99,14 @@
             width: 80%;
         }
 
-        /* Hero image styling*/
+        ul {
+            font-size: 20px;
+            color: black;
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        /* Hero image styling */
         .hero-image {
             display: flex;
             justify-content: center;
@@ -97,7 +115,21 @@
 
         .hero-image img {
             width: 65%;
-            border-radius: 12px;
+            border-radius: 100px;
+            
+        }
+
+        /* Other images */
+        .image {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        .image img {
+            width: 40%;
+            border-radius: 50px;
+            
         }
     </style>
 </head>
@@ -113,7 +145,7 @@
 
         <!--Hero img-->
         <div class="hero-image">
-            <img src="images/VR.png" alt="banana">
+            <img src="assets/images/cesar-bretana-gonzalez-a3dhUC7EhYg-unsplash.jpg" alt="a food truck with an array of interesting items">
         </div>
     
         <!--Content-->
@@ -125,15 +157,42 @@
         </div>
 
         <div id="favs" class="container">
-            <h2>favorites</h2>
+            <h2>Dev Favorites</h2>
+            <h3>Wraps</h3>
+            <p><span style="font-weight: bold;">Function Fries - </span>Buffalo chicken, romaine lettuce, tomatoes, carrots, ranch, blue cheese</p>
+            <p><span style="font-weight: bold;">Loop Wrap - </span>Vegetarian. Hummus, romaine lettuce, sun-dried tomatoes, Kalamata olives, feta cheese, tzatziki sauce</p>
+            <p><span style="font-weight: bold;">Stack Overflow - </span>Jalapeno tortilla, turkey chili, onions, cheddar cheese, avocado</p>
+            <p><span style="font-weight: bold;">Recursive Roll - </span>Smoked salmon, cream cheese, cucumber, dill, and baby spinach</p>
+            <p><span style="font-weight: bold;">Binary Bites - </span>Marinated pork, pickled carrots, cucumber, cilantro, mint, fresno chiles, mayonnaise</p>
+            <p><span style="font-weight: bold;">Git Wrap - </span>Vegetarian. Falafel, red onion, romaine lettuce, tomato, and tzatziki sauce</p>
+            <p><span style="text-align: center;">Note: All wraps, except Stack Overflow are served on your choice of flour or corn tortilla.</span></p>
+            <h3>Sides</h3>
+            <p><span style="font-weight: bold;">Bug-Free Fries - </span>Just a side of fries</p>
+            <p><span style="font-weight: bold;">Three-Layer Cheese Fries - </span>Fries topped with havarti and dill cheese, pastrami, Russian dressing, pickled onions and peppers, pickled jalapeno</p>
+            <p><span style="font-weight: bold;">Golden Ratio Fries - </span>Fries topped with havarti and dill cheese, pastrami, Russian dressing, pickled onions and peppers, pickled jalapeno</p>
+            <p><span style="font-weight: bold;">Compile Chips - </span>Tortilla chips and salsa verde</p>
+        </div>
+
+        <div class="image">
+            <img src="assets/images/pexels-edwardeyer-1247755.jpg" alt="a man handing three delicious burgers to a customer">
         </div>
 
         <div id="locs" class="container">
-            <h2>locations</h2>
+            <h2>Locations</h2>
+            <p>511 Tristin Isle Park Hudsonton, Michigan</p>
         </div>
 
         <div id="hours" class="container">
-            <h2>hours</h2>
+            <h2>Hours</h2>
+            <ul>
+                <li><span style="font-weight: bold;">Monday:</span> 10am-7pm</li>
+                <li><span style="font-weight: bold;">Tuesday:</span> 10am-7pm</li>
+                <li><span style="font-weight: bold;">Wednesday:</span> 10am-7pm</li>
+                <li><span style="font-weight: bold;">Thursday:</span> 10am-10pm</li>
+                <li><span style="font-weight: bold;">Friday:</span> 10am-9pm</li>
+                <li><span style="font-weight: bold;">Saturday:</span> 12am-11pm</li>
+                <li><span style="font-weight: bold;">Sunday:</span> 12am-11m</li>
+            </ul>
         </div>
     
 </body>
