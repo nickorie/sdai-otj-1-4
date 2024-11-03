@@ -48,6 +48,7 @@ body {
 }
 
 /* Main content styling */
+/* combine or redefine p and .container, make width percentages easier to define */
 .container {
     font-family: Arial, Helvetica, sans-serif;
     max-width: 65%;
