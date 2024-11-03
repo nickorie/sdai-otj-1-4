@@ -1,157 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Dish Food Truck & Restaurant</title>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
 
-        body {
-            font-family: Helvetica, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-        }
-
-        /* Navbar styling */
-        .navbar {
-            background-color: rgba(255, 255, 255, 0.6);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
-            backdrop-filter: blur(60px);
-            display: flex;
-            justify-content: center;
-            overflow: visible;
-            position: sticky;
-            top: 0;
-            z-index: 1
-        }
-
-        .navbar a {
-            float: none;
-            display: flex;
-            color: black;
-            text-align: center;
-            padding: 30px 40px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 20px;
-            transition: 0.2s;
-        }
-
-        .navbar a:hover {
-            color: black;
-            font-weight: bold;
-            padding: 25px 40px;
-        }
-
-        .navbar a:active {
-            color: rgba(0, 0, 0, 0.2);
-        }
-
-        /* Responsive Navbar Maybe Remove */
-        @media screen and (max-width: 600px) {
-            .navbar a {
-                float: none;
-                display: flex;
-                width: 100%;
-                text-align: center;
-                padding: 0px;
-            }
-        }
-
-        /* Main content styling */
-        .container {
-            max-width: 65%;
-            margin: auto;
-            padding: 0;
-            scroll-margin-top: 10vh;
-        }
-
-        h1 {
-            color: black;
-            font-size: 60px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        h2 {
-            color: black;
-            font-size: 40px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        h3 {
-            max-width: 65%;
-            color: black;
-            font-size: 30px;
-            font-weight: bold;
-            text-align: left;
-            margin: 0 10%;
-            width: 80%;
-        }
-
-        p {
-            font-size: 20px;
-            line-height: 1.2;
-            color: black;
-            text-align: left;
-            margin: 24px auto;
-            width: 80%;
-        }
-
-        ul {
-            font-size: 20px;
-            color: black;
-            margin: 0 auto;
-            width: 80%;
-        }
-
-        /* Hero image styling */
-        .hero-image {
-            display: flex;
-            justify-content: center;
-            padding: 20px 0;
-            max-width: 70%;
-            margin: 0 auto;
-        }
-
-        .hero-image img {
-            width: 100%;
-            border-radius: 80px;
-            padding: 0 10px;
-            max-width: 800px;
-        }
-    </style>
 </head>
 <body>
 
         <!--Nav-->
-        <div class="navbar">
+        <navbar class="navbar">
             <a href="#about">About</a>
             <a href="#favs">Dev Favorites</a>
             <a href="#locs">Locations</a>
             <a href="#hours">Hours</a>
-        </div>
+        </navbar>
 
         <!--Hero img-->
-        <div class="hero-image">
+        <hero class="hero-image">
             <img src="assets/images/cesar-bretana-gonzalez-a3dhUC7EhYg-unsplash.jpg" alt="a food truck with an array of interesting items">
-            <img src="assets/images/pexels-edwardeyer-1247755.jpg" alt="a man handing three delicious burgers to a customer">
-        </div>
+        </hero>
     
         <!--Content-->
-        <div id="about" class="container">
+        <about id="about" class="container">
             <h1>Dev Dish Food Truck & Restaurant</h1>
             <p>What's so great about combining the worlds of coding and cuisine? Dev Dish was founded by two passionate developers who turned their love for software into a culinary adventure. After years of coding by day and cooking by night, they decided to merge their two passions and create something extraordinary.</p>
             <p>Dev Dish brings a unique twist to the food truck scene, offering a menu full of creative, tech-inspired dishes. Whether you're a tech enthusiast or a food lover, our offerings are designed to satisfy both your appetite and your curiosity.</p>
             <p>Dev Dish is the brainchild of Alex and Jamie, two friends who met at a hackathon and discovered a shared love for innovative cuisine. With a background in software development and a knack for culinary creativity, they embarked on a journey to deliver delicious, tech-themed dishes to the community.</p>
-        </div>
+        </about>
 
-        <div id="favs" class="container">
+        <!-- Hero 2 -->
+        <hero class="hero-image">
+            <img src="assets/images/pexels-edwardeyer-1247755.jpg" alt="a man handing three delicious burgers to a customer">
+        </hero>
+
+        <menu id="favs" class="container">
             <h2>Dev Favorites</h2>
             <h3>Wraps</h3>
             <p><span style="font-weight: bold;">Function Fries - </span>Buffalo chicken, romaine lettuce, tomatoes, carrots, ranch, blue cheese</p>
@@ -166,14 +50,14 @@
             <p><span style="font-weight: bold;">Three-Layer Cheese Fries - </span>Fries topped with havarti and dill cheese, pastrami, Russian dressing, pickled onions and peppers, pickled jalapeno</p>
             <p><span style="font-weight: bold;">Golden Ratio Fries - </span>Fries topped with havarti and dill cheese, pastrami, Russian dressing, pickled onions and peppers, pickled jalapeno</p>
             <p><span style="font-weight: bold;">Compile Chips - </span>Tortilla chips and salsa verde</p>
-        </div>
+        </menu>
 
-        <div id="locs" class="container">
+        <location id="locs" class="container">
             <h2>Locations</h2>
             <p>511 Tristin Isle Park Hudsonton, Michigan</p>
-        </div>
+        </location>
 
-        <div id="hours" class="container">
+        <hours id="hours" class="container">
             <h2>Hours</h2>
             <ul>
                 <li><span style="font-weight: bold;">Monday:</span> 10am-7pm</li>
@@ -184,7 +68,7 @@
                 <li><span style="font-weight: bold;">Saturday:</span> 12am-11pm</li>
                 <li><span style="font-weight: bold;">Sunday:</span> 12am-11m</li>
             </ul>
-        </div>
+        </hours>
     
 </body>
 </html>

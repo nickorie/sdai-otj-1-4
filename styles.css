@@ -1,0 +1,117 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Navbar styling */
+/* Changed color for specified width visibility */
+.navbar {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 800px;
+    margin: auto;
+    background-color: rgba(255, 236, 215, 0.6);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
+    backdrop-filter: blur(60px);
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    position: sticky;
+    top: 0;
+    z-index: 1
+}
+
+.navbar a {
+    float: none;
+    display: flex;
+    color: black;
+    text-align: center;
+    padding: 30px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.navbar a:hover {
+    color: black;
+    font-weight: bold;
+    padding: 25px 40px;
+}
+
+.navbar a:active {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+/* Main content styling */
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 65%;
+    margin: auto;
+    padding: 0;
+    scroll-margin-top: 10vh;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 65%;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0 10%;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    color: black;
+    text-align: left;
+    margin: 24px auto;
+    width: 65%;
+}
+
+ul {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+    margin: 0 auto;
+    width: 65%;
+}
+
+/* Hero image styling */
+.hero-image {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 80px;
+    padding: 0 10px;
+    max-width: 1200px;
+}
